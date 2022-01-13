@@ -5,11 +5,135 @@
 }
 body {
   font-family: 'Rubik', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  overflow-y: scroll;
   margin: 0;
+  padding: 0;
 }
+/* common class start */
+.center-align {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  width: 1140px;
+}
+/* common class end */
+
+/* header start */
+.header {
+  background-color: #ffffff;
+  border: 1px solid red;
+}
+.logo {
+  width: 20%;
+  padding: 30px 0;
+}
+.logo img {
+  vertical-align: center;
+}
+.nav {
+  width: 60%;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+.nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav > ul > li {
+}
+.nav > ul > li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: #4f5665;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.nav > ul > li > a:hover {
+  color: #f53855;
+  transition: color 0.4s ease-out;
+}
+
+.header-right {
+  width: 20%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header-right > ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-right > ul > li > a {
+  text-decoration: none;
+  color: #0b132a;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 19px;
+}
+.header-right > ul > li:nth-child(2) a {
+  color: #f53855;
+  padding: 0.8em 2.5em;
+  border: 1px solid #f53855;
+  border-radius: 2em;
+}
+.header-right > ul > li:nth-child(2) a:hover {
+  color: white;
+  background-color: #f53855;
+}
+
+/* header end */
+
+/* hero start */
+.hero {
+  background-color: #ffffff;
+}
+.hero-left {
+  width: 50%;
+}
+.hero-left > h1 {
+  color: #0b132a;
+  font-size: 50px;
+  font-weight: 500;
+}
+.hero-left > h1 > .extra-bold {
+  font-weight: bold;
+}
+.hero-left > p {
+  color: #4f5665;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hero-left > a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 1.2em 4em;
+  border-radius: 1em;
+  background-color: #f53855;
+  margin-top: 10px;
+  box-shadow: 0px 20px 40px #f538547e;
+}
+.hero-left > a:hover {
+  background-color: #0b132a;
+}
+.hero-right img {
+  width: 611.24px;
+  height: 382.44px;
+}
+
+/* hero stop */
